@@ -1,0 +1,73 @@
+/* Definición de variables globales para colores */
+:root {
+    --color-principal: #ff0052; /* Color principal usado en títulos y botones */
+    --color-texto: #333; /* Color estándar del texto */
+    --fondo-formulario: #ffffff; /* Color de fondo para el formulario */
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: #f0f0f0; /* Color gris claro de fondo */
+    font-family: "Roboto", sans-serif; /* Tipografía general */
+}
+
+/* Contenedor personalizado del formulario */
+.form-container {
+    background-color: var(--fondo-formulario); /* Fondo blanco del formulario usando variable */
+    width: 100%; /* Ancho completo */
+    margin: auto; /* Centrado horizontal */
+}
+
+/* Estilo del título principal */
+.titulo {
+    color: var(--color-principal); /* Usa variable para color principal */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para subtítulo o texto secundario */
+.subtitulo {
+    color: var(--color-texto); /* Texto con color estándar definido en variable */
+}
+
+/* Estilos personalizados para elementos select e input */
+.form-control {
+    border-radius: 10px; /* Bordes redondeados */
+    border-color: #ccc; /* Color del borde gris claro */
+}
+
+.form-select{
+    border-radius: 10px; /* Bordes redondeados */
+    border-color: #ccc; /* Color del borde gris claro */
+}
+
+/* Estilos al enfocar elementos select e input */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-principal); /* Color principal del borde al enfocar */
+    box-shadow: none; /* Elimina la sombra predeterminada */
+}
+
+/* Estilos personalizados para el botón de envío */
+.btn-enviar {
+    background-color: var(--color-principal); /* Color de fondo usando variable principal */
+    color: #fff; /* Texto blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Padding interno para mayor tamaño del botón */
+    border: none; /* Sin borde visible */
+}
+
+/* Estilo al pasar el cursor sobre el botón enviar */
+.btn-enviar:hover {
+    opacity: 0.9; /* Ligeramente transparente al pasar cursor */
+}
+
+/* Estilos generales para enlaces */
+a {
+    color: var(--color-principal); /* Color principal para enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+/* Estilo al pasar el cursor sobre enlaces */
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}

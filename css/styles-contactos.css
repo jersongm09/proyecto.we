@@ -1,0 +1,46 @@
+/* 1. Selector padre o principal */
+:root{
+    /* Declaración de variable */
+    --color-primario: #EC111A;
+    --color-secundario: #082BA5;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+    --color-fondo: #fcfcfc;
+
+}
+/* 2. Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* 3. Selector hijo */
+body{
+    background-color: var(--color-fondo) ;
+}
+
+/* Selector de etiqueta */
+form{
+    background-color: white;
+    padding: 1em;
+    box-shadow: 2px 2px 8px #000;
+    }
+label{
+    color: var(--color-primario);
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: .5em;
+    border: 1px solid var(--color-primario);
+    margin-bottom: .5em;
+}
+
+textarea{
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    border: 1px solid var(--color-titulos) ;
+}
+
